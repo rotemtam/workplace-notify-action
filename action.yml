@@ -4,8 +4,11 @@ branding:
   icon: at-sign
 author: 'rotemtam'
 inputs:
-  api-key:
-    description: 'The Workplace API key to use for authentication. Must be passed as a secret.'
+  access-token:
+    description: 'The Workplace access token to use for authentication. Must be passed as a secret.'
+    required: true
+  group-id:
+    description: 'The Workplace group ID to send the message to.'
     required: true
   message:
     description: 'The contents of the message to send.'

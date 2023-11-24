@@ -50,6 +50,12 @@ jobs:
           load: true
       - name: sanity-push
         uses: ./testdata/action
+        with:
+          access-token: ${{ secrets.TEST_TOKEN }}
+          message: |
+            # Hello
+            [Link](https://rotemtam.com)
+          group-id: "5728694037183382"
   docker:
     runs-on: ubuntu-latest
     needs: [golangci-lint, unit-tests, integration-tests]
