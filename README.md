@@ -17,7 +17,7 @@ A GitHub Action to send a Workplace notification from your workflows.
  
 ## Access Token
 
-1. Go to `https://<you org>.workplace.com/work/admin/apps/`
+1. Go to `https://<your org>.workplace.com/work/admin/apps/`
 2. Click on `Create Custom Integration`.
 3. Give it a name and description and click `Create`.
 4. In the main screen click on `Create Access Token`.
