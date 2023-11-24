@@ -1,0 +1,19 @@
+name: 'workplace-notify-action'
+description: 'Send notifications to Meta Workplace'
+branding:
+  icon: at-sign
+author: 'rotemtam'
+inputs:
+  api-key:
+    description: 'The Workplace API key to use for authentication. Must be passed as a secret.'
+    required: true
+  message:
+    description: 'The contents of the message to send.'
+    required: true
+  formatting:
+    default: 'MARKDOWN'
+    description: 'The format of the message to send. Defaults to MARKDOWN.'
+    required: false
+runs:
+  using: 'docker'
+  image: 'docker://rotemtam/workplace-notify-action:latest'
